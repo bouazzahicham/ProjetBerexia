@@ -1,0 +1,6 @@
+{
+  "verbose" : true,
+  "watch": ["./main.ts","./persistence","./routes","./Indicateurs"],
+  "ext" : "ts",
+  "exec": "ts-node ./main.ts"
+}
