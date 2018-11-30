@@ -1,0 +1,33 @@
+<div class="collection-item grey">DataSets 
+<a class="material-icons right" (click)="openModal('upload-modal')">file_upload</a>
+<jw-modal id="upload-modal">
+
+  <div id="modal1">
+    <div class="modal-content">
+      
+        <h1>Upload File!</h1>
+        <input type="file" #file />
+      
+
+      <div class="progress" *ngIf="progress">
+        <div *ngIf="progress" class="determinate" [ngStyle]="{'width.%': progressPercent}"></div>
+      </div>
+    </div>
+    <div class="divider mt-2 mb-2"></div>
+    <div class="modal-footer">
+      
+        <button class="btn " (click)="closeModal('upload-modal');">Cancel</button>
+
+     
+
+        <button class="btn right" (click)="startUpload();">{{primaryButtonText}}</button>
+    </div>
+  </div>
+  
+</jw-modal>
+<div class="row files "  id="files-zone" style="margin: 5px; width: 100%; height:22em;overflow-y: scroll">
+        
+</div>
+</div>
+
+

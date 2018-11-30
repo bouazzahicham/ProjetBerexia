@@ -1,0 +1,35 @@
+<div class="col s9 no-padding">
+  <!-- Grey navigation panel -->
+  <nav>
+
+    <div class="nav-wrapper blue darken-4 no-padding ">
+      <ul class="right ">
+        <li><a class="waves-effect waves-light btn">Run</a></li>
+
+      </ul>
+      <ul class="left ">
+        <li><a class="waves-effect waves-light btn">Preview</a></li>
+
+      </ul>
+
+    </div>
+    <div>
+
+    </div>
+
+  </nav>
+  <div class="col-12">
+
+  
+
+  <div class="draggable-container"  style="width: 100%;height: 38em;" id="svg-chart">
+      <app-node [node]="{
+        id: '1',
+        position:{x:10,y:10} 
+      }"></app-node>
+    </div>
+    
+
+    <app-patch-overlay *ngIf="showPatches"></app-patch-overlay>
+  </div>
+</div>

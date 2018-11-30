@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* EXAMPLE STYLES
+-------------------------------*/
+  /* nav {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+  } */
+  nav a {
+    margin-right: 8px;
+  }
+  h1 {
+    font-weight: normal;
+    margin-top: 0;
+  }
+  input[type="text"] {
+    display: block;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .credits {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+  }
+
+
+/*  */
+.no-margin {
+  margin: 0%;
+}
+
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-1 {
+  margin-top: 1em !important;
+}
+
+.mt-2 {
+  margin-top: 2em !important;
+}
+
+.mb-2 {
+  margin-bottom: 2em !important;
+}
+
+.csv-icon{
+  max-width: 3em;
+}
+
+/* MODAL STYLES
+-------------------------------*/
+jw-modal {
+    /* modals are hidden by default */
+  
+    display: none;
+  }
+  jw-modal .jw-modal {
+    /* modal container fixed across whole screen */
+  
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* z-index must be higher than .jw-modal-background */
+  
+    z-index: 1000;
+    /* enables scrolling for tall modals */
+  
+    overflow: auto;
+  }
+  jw-modal .jw-modal .jw-modal-body {
+    padding: 20px;
+    background: #fff;
+    /* margin exposes part of the modal background */
+  
+    margin: 40px;
+  }
+  jw-modal .jw-modal-background {
+    /* modal background fixed across whole screen */
+  
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* semi-transparent black  */
+  
+    background-color: #000;
+    opacity: 0.75;
+    /* z-index must be below .jw-modal and above everything else  */
+  
+    z-index: 900;
+  }
+  body.jw-modal-open {
+    /* body overflow is hidden to hide main scrollbar when modal window is open */
+  
+    overflow: hidden;
+  }
+
+
+  .node{
+    width: 7em;
+    border: #ccc solid 1px;
+    border-radius: 10px;
+    background-color:grey;
+    color: white;
+  }
